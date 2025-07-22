@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>casetta31</title>
+  <link rel="icon" href="/favicon31.png" type="image/png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      overflow-x: hidden;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      color: #111;
+    }
+
+    .lang-select {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      z-index: 100;
+    }
+
+    .lang-select a {
+      margin-left: 0.5rem;
+      color: #666;
+      text-decoration: none;
+    }
+
+    .img-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      margin-top: 10rem;
+    }
+
+    .img-container {
+      width: 100%;
+      max-width: 3300px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      max-height: 800px;
+      min-height: 400px;
+      object-fit: cover;
+      display: block;
+      border: none;
+    }
+
+    @media (max-width: 768px) {
+      .img-container img {
+        height: 400px;
+        width: auto;
+        max-width: none;
+      }
+
+      .img-container img[src="casetta_striscia.png"] {
+        height: 25px;
+        width: auto;
+        max-width: none;
+      }
+    }
+
+    .content {
+      max-width: 600px;
+      margin: 1rem auto 3rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+      font-size: 14pt;
+      text-align: justify;
+      color: #111;
+    }
+
+    .title {
+      font-family: Cochin, serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin: 2rem 0 0.2rem 0;
+      color: #111;
+    }
+
+    .subtitle {
+      font-family: Cochin, serif;
+      font-size: 1.7rem;
+      text-align: center;
+      margin: 0 0 1.5rem 0;
+      color: #444;
+      font-weight: bold;
+    }
+
+    .img-container img[src="casetta_striscia.png"] {
+      max-height: 50px;
+      min-height: 25px;
+    }
+  </style>
+  <script>
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get('lang');
+      document.getElementById('it').style.display = (lang === 'en') ? 'none' : 'block';
+      document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+    };
+  </script>
+</head>
+<body>
+  <div class="lang-select">
+    <a href="?lang=it">IT</a> | <a href="?lang=en">EN</a>
+  </div>
+
+  <a href="index.html">
+    <div class="img-wrapper">
+      <div class="img-container">
+        <img src="schizzo31.png" alt="Casetta 31" />
+      </div>
+    </div>
+  </a>
+
+  <div id="it" class="content">
+    <h1 class="title">Casetta 31</h1>
+    <h2 class="subtitle">Una casa che cammina nella memoria</h2>
+
+    <p>Nel paesaggio contemporaneo dell'arte relazionale e ambientale, raramente si incontra un'opera che riesca a tenere insieme l'intimità del lutto e la forza pubblica del gesto, senza scadere nella celebrazione privata o nella retorica del ricordo. Casetta 31 riesce in questo miracolo.</p>
+    <p>Non è solo un progetto artistico: è un atto di cura, di presenza, e insieme un piccolo atto politico nel senso più profondo del termine perché ci chiede di fermarsi, ascoltare, e riconoscere che la memoria può essere un motore, non un peso. Casetta 31 è una piccola struttura mobile, una sorta di rifugio su ruote.</p>
+    <p><strong>Dentro:</strong> oggetti, fotografie, presenze invisibili.<br><strong>Fuori:</strong> strade, paesi, sguardi curiosi.</p>
+    <p>Il suo autore la definisce "una casa per mio padre", ma in realtà questa casetta è un dispositivo di relazione. Ogni luogo che tocca, ogni persona che vi entra (con rispetto, con silenzio, con emozione), contribuisce ad ampliare la narrazione. Il padre, da figura familiare, si fa simbolo: di padri perduti, di affetti lasciati andare, di storie che meritano ancora un viaggio.</p>
+    <p>Ma c'è qualcosa di ancora più sottile che accade in Casetta 31: non è solo un archivio mobile, è una forma di arte performativa silenziosa. Ogni sosta è una scena. Ogni spettatore, un possibile testimone o partecipante. Chi entra non visita un'opera: entra in una memoria, si siede accanto a una vita, forse la rivede riflessa nella propria. E in questo incontro tra autobiografia e paesaggio, tra movimento e pausa, Casetta 31 lavora sull'arte come esperienza trasformativa.</p>
+    <p><em>Non a caso l'artista non impone un percorso: accompagna.<br>Non chiede di capire, ma di sentire.</em></p>
+    <p>In un tempo in cui le memorie si archiviano in cloud, e il lutto si consuma in silenzio individuale, questa piccola casa ambulante restituisce dignità al ricordo, gli dà corpo, spazio, e soprattutto lo mette in viaggio. È un'arte che non si espone ma si offre. Che non cerca clamore, ma incontri reali, anche brevi, anche imperfetti. Per questo Casetta 31 è molto più di un'opera: è una pratica di vita, una dichiarazione d'amore, e un invito gentile a ricordare che siamo fatti anche di chi non c'è più e che portare qualcuno con sé non è nostalgia, ma resistenza poetica.</p>
+  </div>
+  <div id="en" class="content" style="display: none;">
+    <h1 class="title">Casetta 31</h1>
+    <h2 class="subtitle">A house that walks through memory</h2>
+
+    <p>In the contemporary landscape of relational and environmental art, it’s rare to encounter a work that manages to unite the intimacy of mourning with the public force of a gesture, without falling into private celebration or rhetorical remembrance. Casetta 31 accomplishes this miracle.</p>
+    <p>It’s not merely an artistic project: it’s an act of care, of presence, and also a small political act in the deepest sense of the term, because it asks us to pause, listen, and recognize that memory can be a driving force, not a burden. Casetta 31 is a small mobile structure, a kind of shelter on wheels.</p>
+    <p><strong>Inside:</strong> objects, photographs, invisible presences.<br><strong>Outside:</strong> streets, villages, curious glances.</p>
+    <p>The artist describes it as "a house for my father", but in reality this little house is a device of connection. Every place it touches, every person who enters (with respect, with silence, with emotion), helps expand the narrative. The father, from personal figure, becomes symbol: of lost fathers, of released affections, of stories that still deserve a journey.</p>
+    <p>But something even subtler happens in Casetta 31: it’s not just a mobile archive, it’s a form of silent performative art. Every stop is a scene. Every visitor a possible witness or participant. Those who enter don’t visit an artwork — they enter a memory, sit beside a life, perhaps see their own reflected in it. In this encounter between autobiography and landscape, between movement and pause, Casetta 31 works through art as a transformative experience.</p>
+    <p><em>The artist doesn’t impose a path: he accompanies.<br>He doesn’t ask to understand, but to feel.</em></p>
+    <p>In a time when memories are stored in the cloud and grief is processed in solitary silence, this little traveling house restores dignity to remembrance, gives it form, space, and most of all sets it in motion. It’s an art that doesn’t exhibit itself but offers itself. That doesn’t seek clamor, but real encounters — even brief, even imperfect. For this reason, Casetta 31 is much more than an artwork: it’s a way of life, a declaration of love, and a gentle invitation to remember that we are made also of those who are no longer here, and carrying someone with us is not nostalgia — it is poetic resistance.</p>
+  </div>
+
+  <!-- Immagine striscia dopo i contenuti -->
+  <div class="img-wrapper">
+    <div class="img-container">
+      <img src="casetta_striscia.png" alt="Casetta Striscia" />
+    </div>
+  </div>
+	<!-- Seconda sezione fluida e proporzionata -->
+<div style="
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-image: url('casetta_4.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 2560px;
+    gap: 2%;
+    flex-wrap: nowrap;
+  ">
+    <div style="flex: 1;">
+      <img src="casetta_5.png" alt="Casetta sinistra"
+           style="width: 100%; height: auto;" />
+    </div>
+    <div style="flex: 1;">
+      <img src="casetta_6.png" alt="Casetta centrale"
+           style="width: 100%; height: auto;" />
+    </div>
+    <div style="flex: 1;">
+      <img src="casetta_7.png" alt="Casetta destra"
+           style="width: 100%; height: auto;" />
+    </div>
+  </div>
+</div>
+
+<!-- Striscia finale -->
+<div class="img-wrapper">
+  <div class="img-container">
+    <img src="casetta_striscia.png" alt="Casetta Striscia" />
+  </div>
+</div>
+
+
+</body>
+</html>
