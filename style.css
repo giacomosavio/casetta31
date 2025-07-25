@@ -1,0 +1,300 @@
+/* RESET BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  padding-top: 15vh;
+}
+
+/* TITOLI E TESTI */
+h1.intro-title,
+h2.info-title,
+h2.intro-title {
+  font-family: 'Cochin', serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h1.intro-title,
+h2.intro-title {
+  font-size: 22pt;
+}
+
+h2.info-title {
+  font-size: 30pt;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p,
+.column-3 p,
+.left-column p,
+.right-column p,
+.sixth-section p {
+  font-size: 14pt;
+  text-align: justify;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.third-section .left-column p {
+  margin-bottom: 0.5rem;
+}
+
+.third-section p {
+  line-height: 1.3;
+}
+
+.right {
+  text-align: right;
+}
+
+.column-3 p.right {
+  text-align: right;
+}
+
+
+/* CONTENUTO CENTRALE */
+.content {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+/* SELETTORE LINGUA */
+.lang-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+}
+
+.lang-toggle button {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #666;
+  margin-left: 0.5rem;
+  cursor: pointer;
+}
+
+/* IMMAGINI INIZIALE E FINALE */
+.main-image img,
+.footer-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 80px;
+}
+
+/* STRISCE DECORATIVE TRA SEZIONI */
+.striscia {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+  min-height: 80px;
+}
+
+/* IMMAGINE NELLA STRISCIA CON ALTEZZA MINIMA */
+.striscia img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  min-height: 80px;
+}
+
+/* CORREZIONE: DISTANZA TRA STRISCE CONSECUTIVE */
+.striscia + .striscia {
+  margin-top: 8rem;
+}
+
+/* SEZIONE 2 — OVERLAY */
+.second-section {
+  position: relative;
+  width: 100%;
+}
+
+.background-casetta {
+  position: relative;
+}
+
+.background-casetta img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.casetta-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.casetta-overlay img {
+  max-height: 400px;
+  height: auto;
+  width: auto;
+}
+
+/* SEZIONI CON COLONNE — 3 COLONNE */
+.columns-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1600px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.column-3 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-width: 280px;
+  max-width: 30%;
+  min-height: 550px;
+}
+
+.column-3 img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+
+/* SEZIONE 3 — SCHEDA TECNICA */
+.left-column,
+.right-column {
+  flex: 1 1 30%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  text-align: justify;
+}
+
+.left-column img {
+  margin-top: 3rem;
+}
+
+.right-column img {
+  margin-top: auto;
+}
+
+.left-column img,
+.right-column img {
+  width: 100%;
+  height: auto;
+}
+
+/* SEZIONE 6 — TESTIMONIANZA */
+.sixth-section h2 {
+  font-family: 'Cochin', serif;
+  font-weight: bold;
+  font-size: 22pt;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sixth-section p {
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+  .casetta-overlay {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+
+  .casetta-overlay img {
+    max-width: 90vw;
+    height: auto;
+  }
+
+  .columns-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .column-3,
+  .left-column,
+  .right-column {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    min-height: auto;
+  }
+
+  .main-image img,
+  .footer-image img {
+    min-height: 300px;
+  }
+
+  .striscia {
+    height: 80px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .striscia + .striscia {
+    margin-top: 6rem;
+  }
+}
+
+/* ---- CENTRATURA IMMAGINI LARGHE ---- */
+.main-image,
+.footer-image,
+.striscia-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-image img,
+.footer-image img,
+.striscia {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 1000px;
+  max-width: 3000px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
